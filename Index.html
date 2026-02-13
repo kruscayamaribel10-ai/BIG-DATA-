@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalHydrate | Energía en cada gota</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0077ff;
+            --dark-blue: #003366;
+            --accent-green: #00ffcc;
+            --light-bg: #f4f7f6;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--light-bg);
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background-color: var(--accent-green);
+            color: var(--dark-blue);
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.1);
+            background-color: #fff;
+        }
+
+        /* Beneficios */
+        .benefits {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .benefit-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        /* Productos */
+        .products {
+            padding: 80px 20px;
+            background-color: #fff;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--dark-blue);
+        }
+
+        .product-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product-item {
+            flex: 1;
+            min-width: 300px;
+            max-width: 350px;
+            text-align: center;
+        }
+
+        .product-item img {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.5s;
+        }
+
+        .product-item img:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: var(--accent-green);
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hero-content">
+            <h1>Lleva tu Rendimiento al Límite</h1>
+            <p>Bebidas con electrolitos naturales y el balance perfecto de minerales para que nunca te detengas.</p>
+            <a href="#contacto" class="cta-button">PRUÉBALO AHORA</a>
+        </div>
+    </header>
+
+    <section class="benefits">
+        <div class="benefit-card">
+            <h3>⚡ Hidratación Rápida</h3>
+            <p>Fórmula de absorción inmediata para recuperar líquidos en tiempo récord.</p>
+        </div>
+        <div class="benefit-card">
+            <h3>🔋 Más Energía</h3>
+            <p>Enriquecido con magnesio y potasio para evitar la fatiga muscular.</p>
+        </div>
+        <div class="benefit-card">
+            <h3>🌱 100% Natural</h3>
+            <p>Sin azúcares añadidos ni colorantes artificiales. Directo de la fuente.</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2 class="section-title">Nuestra Gama Premium</h2>
+        <div class="product-flex">
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1622467820358-693633190471?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sabor Cítrico">
+                <h3>Blue Ocean (Cítrico)</h3>
+                <p>Perfecto para después de correr.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1543258103-a62bdc069871?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sabor Fresa">
+                <h3>Red Rush (Baya)</h3>
+                <p>Intensidad máxima para gimnasio.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sabor Tropical">
+                <h3>Gold Sun (Tropical)</h3>
+                <p>Ideal para hidratación diaria.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <h2>Únete a la Revolución de la Hidratación</h2>
+        <p>Suscríbete para recibir ofertas exclusivas y consejos de entrenamiento.</p>
+        <div class="footer-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 VitalHydrate. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
